@@ -1,982 +1,595 @@
-
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HealingFromFGMTextLine | Confidential Support & Prevention</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        neonPink: '#ff00aa',
-                        neonBlue: '#00f0ff',
-                        neonGreen: '#39ff14',
-                        darkBg: '#050508',
-                        darkCard: '#12121a',
-                        darkBorder: '#1f1f2e'
-                    },
-                    fontFamily: {
-                        nexa: ['Nexa', 'Montserrat', 'Syne', 'sans-serif'],
-                        y2k: ['VT323', 'Orbitron', 'monospace'],
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts for 2000s Y2K Display Feel -->
+    <title>PGADHealingLine -- Text Line For Those With Persistent Genital Arousal Disorder/GPD</title>
+
+    <!-- Google Fonts for authentic mid-2000s cyber/web portal vibe -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=VT323&family=Montserrat:wght@400;600;700;800;900&family=Syne:wght@700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=VT323&family=Orbitron:wght@700;900&family=Trebuchet+MS&display=swap"
         rel="stylesheet">
+    <!-- FontAwesome 4.7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-        @font-face {
-            font-family: 'Nexa';
-            src: local('Nexa Bold'), local('NexaText-Bold'), url('https://fonts.cdnfonts.com/s/15009/NexaBold.woff') format('woff');
-            font-weight: 700;
-        }
-
-        @font-face {
-            font-family: 'Nexa';
-            src: local('Nexa Light'), local('NexaText-Light'), url('https://fonts.cdnfonts.com/s/15009/NexaLight.woff') format('woff');
-            font-weight: 400;
+        * {
+            box-sizing: border-box;
         }
 
         body {
-            font-family: 'Nexa', 'Montserrat', sans-serif;
-            background-color: #050508;
-            color: #e2e8f0;
+            margin: 0;
+            padding: 0;
+            background-color: #05020a;
+            color: #00ffcc;
+            font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+            font-size: 13px;
             background-image:
-                linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
-            background-size: 30px 30px;
+                linear-gradient(rgba(255, 0, 204, 0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 204, 0.08) 1px, transparent 1px);
+            background-size: 20px 20px;
         }
 
-        .font-y2k {
+        a {
+            color: #00f0ff;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #ff00aa;
+            background-color: #110022;
+        }
+
+        #container {
+            width: 960px;
+            margin: 10px auto;
+            background-color: #0c0518;
+            border: 3px double #ff00aa;
+            box-shadow: 0 0 25px #ff00aa, inset 0 0 15px rgba(0, 240, 255, 0.3);
+        }
+
+        #header-banner {
+            background: linear-gradient(180deg, #1f0036 0%, #05020a 100%);
+            border-bottom: 2px solid #00f0ff;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .y2k-title {
             font-family: 'VT323', 'Orbitron', monospace;
+            font-size: 42px;
+            color: #ff00aa;
+            text-shadow: 0 0 12px #ff00aa, 0 0 22px #ff00aa, 0 0 30px #00f0ff;
+            margin: 0;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .y2k-subtitle {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 12px;
+            color: #39ff14;
+            text-shadow: 0 0 8px #39ff14;
+            letter-spacing: 2px;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        #safety-bar {
+            background-color: #ff0055;
+            color: #ffffff;
+            padding: 6px 12px;
+            font-size: 11px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ffffff;
+        }
+
+        .btn-quick-exit {
+            background: linear-gradient(180deg, #ffff00 0%, #ff9900 100%);
+            color: #000000;
+            border: 2px outset #ffffff;
+            font-weight: bold;
+            font-size: 11px;
+            padding: 2px 8px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .btn-quick-exit:hover {
+            border-style: inset;
+            background: #ffcc00;
+        }
+
+        marquee {
+            background-color: #120024;
+            color: #39ff14;
+            border-bottom: 1px solid #ff00aa;
+            font-family: 'VT323', monospace;
+            font-size: 16px;
+            padding: 4px;
+        }
+
+        #navbar {
+            background-color: #190033;
+            border-bottom: 2px solid #00f0ff;
+            text-align: center;
+            padding: 6px 0;
+        }
+
+        #navbar a {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 11px;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 6px 14px;
+            margin: 0 2px;
+            border: 1px solid #ff00aa;
+            background: linear-gradient(180deg, #330066 0%, #110022 100%);
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        #navbar a:hover {
+            background: #ff00aa;
+            color: #000000;
+            box-shadow: 0 0 10px #ff00aa;
+        }
+
+        #main-wrapper {
+            display: flex;
+            padding: 15px;
+            gap: 15px;
+        }
+
+        .sidebar {
+            width: 240px;
+            flex-shrink: 0;
+        }
+
+        .content-area {
+            flex-grow: 1;
+            width: 670px;
+        }
+
+        .cyber-box {
+            background-color: #100624;
+            border: 1px solid #00f0ff;
+            margin-bottom: 15px;
+            padding: 12px;
+            box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+        }
+
+        .cyber-box-pink {
+            background-color: #1a0520;
+            border: 1px solid #ff00aa;
+            margin-bottom: 15px;
+            padding: 12px;
+            box-shadow: 0 0 10px rgba(255, 0, 170, 0.3);
+        }
+
+        .cyber-box-green {
+            background-color: #081a0d;
+            border: 1px solid #39ff14;
+            margin-bottom: 15px;
+            padding: 12px;
+            box-shadow: 0 0 10px rgba(57, 255, 20, 0.2);
+        }
+
+        .box-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 5px 8px;
+            margin: -12px -12px 10px -12px;
+            text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        /* Y2K Neon Glow Effects */
-        .glow-pink {
-            text-shadow: 0 0 10px rgba(255, 0, 170, 0.7), 0 0 20px rgba(255, 0, 170, 0.4);
+        .title-blue {
+            background: linear-gradient(90deg, #0088cc, #001133);
+            color: #00f0ff;
+            border-bottom: 1px solid #00f0ff;
         }
 
-        .glow-blue {
-            text-shadow: 0 0 10px rgba(0, 240, 255, 0.7), 0 0 20px rgba(0, 240, 255, 0.4);
+        .title-pink {
+            background: linear-gradient(90deg, #cc0088, #330011);
+            color: #ff99ee;
+            border-bottom: 1px solid #ff00aa;
         }
 
-        .glow-green {
-            text-shadow: 0 0 10px rgba(57, 255, 20, 0.7), 0 0 20px rgba(57, 255, 20, 0.4);
+        .title-green {
+            background: linear-gradient(90deg, #008822, #002205);
+            color: #39ff14;
+            border-bottom: 1px solid #39ff14;
         }
 
-        .box-glow-pink {
-            box-shadow: 0 0 15px rgba(255, 0, 170, 0.35);
-            border: 1px solid #ff00aa;
+        .hero-banner {
+            background: #18002e;
+            border: 2px dashed #ff00aa;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 15px;
         }
 
-        .box-glow-blue {
-            box-shadow: 0 0 15px rgba(0, 240, 255, 0.35);
-            border: 1px solid #00f0ff;
+        .hero-banner h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 18px;
+            color: #ffffff;
+            margin: 0 0 8px 0;
+            text-shadow: 0 0 10px #ff00aa;
         }
 
-        .box-glow-green {
-            box-shadow: 0 0 15px rgba(57, 255, 20, 0.35);
-            border: 1px solid #39ff14;
+        .text-neon-btn {
+            display: inline-block;
+            background: linear-gradient(180deg, #ff00aa 0%, #990066 100%);
+            color: #ffffff !important;
+            font-family: 'VT323', monospace;
+            font-size: 26px;
+            padding: 8px 20px;
+            text-decoration: none;
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 15px #ff00aa;
+            margin-top: 10px;
+            font-weight: bold;
         }
 
-        .y2k-btn-pink {
-            background: linear-gradient(135deg, #ff00aa 0%, #b30077 100%);
-            box-shadow: 0 0 15px rgba(255, 0, 170, 0.5);
-        }
-
-        .y2k-btn-pink:hover {
-            box-shadow: 0 0 25px rgba(255, 0, 170, 0.8);
-            transform: translateY(-1px);
-        }
-
-        .y2k-btn-blue {
-            background: linear-gradient(135deg, #00f0ff 0%, #0088cc 100%);
-            color: #000;
-            box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
-        }
-
-        .y2k-btn-blue:hover {
-            box-shadow: 0 0 25px rgba(0, 240, 255, 0.8);
-            transform: translateY(-1px);
-        }
-
-        .anatomy-hover:hover {
-            filter: drop-shadow(0px 0px 14px rgba(255, 0, 170, 0.9));
-            cursor: pointer;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: #0a0a10;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar-thumb {
+        .text-neon-btn:hover {
             background: #00f0ff;
-            border-radius: 4px;
+            color: #000000 !important;
+            box-shadow: 0 0 20px #00f0ff;
         }
 
-        .scanlines {
-            position: relative;
-            overflow: hidden;
+        .anatomy-container {
+            background-color: #06020c;
+            border: 1px solid #00f0ff;
+            padding: 10px;
+            text-align: center;
         }
 
-        .scanlines::before {
-            content: " ";
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
-            background-size: 100% 4px;
-            z-index: 2;
-            pointer-events: none;
-            opacity: 0.4;
+        .anatomy-part {
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .anatomy-part:hover {
+            filter: drop-shadow(0px 0px 10px #39ff14);
+            opacity: 1 !important;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            background-color: #000000;
+            border: 1px solid #00f0ff;
+            color: #00ffcc;
+            padding: 5px;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(180deg, #00f0ff 0%, #006688 100%);
+            color: #000000;
+            border: 1px solid #ffffff;
+            font-weight: bold;
+            padding: 5px 15px;
+            cursor: pointer;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        input[type="submit"]:hover {
+            background: #ff00aa;
+            color: #ffffff;
+        }
+
+        #footer {
+            background-color: #05020a;
+            border-top: 2px solid #ff00aa;
+            padding: 15px;
+            text-align: center;
+            font-size: 11px;
+            color: #8888aa;
+        }
+
+        .badge-row {
+            margin: 10px 0;
+        }
+
+        .retro-badge {
+            display: inline-block;
+            border: 1px solid #555555;
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 9px;
+            font-family: sans-serif;
+            padding: 2px 5px;
+            margin: 0 3px;
+        }
+
+        .badge-pink {
+            border-color: #ff00aa;
+            color: #ff00aa;
+        }
+
+        .badge-blue {
+            border-color: #00f0ff;
+            color: #00f0ff;
+        }
+
+        .badge-green {
+            border-color: #39ff14;
+            color: #39ff14;
         }
     </style>
 </head>
 
-<body class="antialiased selection:bg-neonPink selection:text-black flex flex-col min-h-screen">
+<body>
 
-    <!-- Quick Exit Safety Bar -->
-    <div
-        class="bg-black text-white py-2 px-4 text-xs sm:text-sm flex justify-between items-center sticky top-0 z-50 border-b border-neonPink shadow-[0_0_15px_rgba(255,0,170,0.4)]">
-        <div class="flex items-center space-x-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-neonPink animate-ping"></span>
-            <span class="font-bold tracking-wider text-neonPink uppercase">Quick Exit Bar:</span>
-            <span class="hidden sm:inline text-slate-300">Clicking "Hide Page" leaves immediately for your
-                privacy.</span>
-        </div>
-        <button onclick="quickExit()"
-            class="bg-neonPink hover:bg-pink-600 text-black font-extrabold px-3 py-1 rounded text-xs transition flex items-center gap-1.5 shadow-[0_0_10px_#ff00aa]">
-            <i class="fa-solid fa-power-off"></i> HIDE PAGE (Google)
-        </button>
-    </div>
+    <div id="container">
 
-    <!-- Y2K Header Navigation (Fixed Title Markup) -->
-    <header class="bg-black/90 backdrop-blur-md sticky top-[37px] z-40 border-b border-darkBorder">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-3 group">
-                <span
-                    class="font-y2k text-xl sm:text-2xl font-bold tracking-widest text-neonPink glow-pink uppercase transition group-hover:text-neonBlue">
-                    HealingFromFGMTextLine
-                </span>
-            </a>
-
-            <!-- Desktop Nav -->
-            <nav
-                class="hidden md:flex items-center space-x-8 text-xs font-bold uppercase tracking-wider text-slate-300">
-                <a href="#about" class="hover:text-neonPink transition">About Us</a>
-                <a href="#anatomy" class="hover:text-neonBlue transition">Internal Clitoris</a>
-                <a href="#truths" class="hover:text-neonGreen transition">Nerve Reality</a>
-                <a href="#support" class="hover:text-neonPink transition">Text Support</a>
-                <a href="#faq" class="hover:text-neonBlue transition">FAQ</a>
-            </nav>
-
-            <div class="hidden md:flex items-center space-x-3">
-                <a href="sms:15024308613"
-                    class="y2k-btn-pink text-white font-extrabold px-4 py-2 rounded-lg text-xs uppercase tracking-wider flex items-center gap-2">
-                    <i class="fa-solid fa-comment-sms"></i> Text 1-502-430-8613
-                </a>
-            </div>
-
-            <!-- Mobile menu button -->
-            <button id="mobile-menu-btn" class="md:hidden text-neonBlue focus:outline-none p-2 text-2xl">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+        <!-- 2005 Emergency Privacy Bar -->
+        <div id="safety-bar">
+            <span><i class="fa fa-shield"></i> PRIVACY ALERT: NEED QUICK EXIT? CLICK BUTTON TO GO TO GOOGLE</span>
+            <button onclick="quickExit()" class="btn-quick-exit"><i class="fa fa-power-off"></i> LEAVE PAGE NOW</button>
         </div>
 
-        <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu"
-            class="hidden md:hidden bg-black border-b border-darkBorder px-4 pt-2 pb-6 space-y-3 text-xs font-bold uppercase tracking-wider">
-            <a href="#about" class="block py-2 text-slate-300 hover:text-neonPink border-b border-darkBorder">About
-                Us</a>
-            <a href="#anatomy" class="block py-2 text-slate-300 hover:text-neonBlue border-b border-darkBorder">Internal
-                Clitoris</a>
-            <a href="#truths" class="block py-2 text-slate-300 hover:text-neonGreen border-b border-darkBorder">Nerve
-                Reality</a>
-            <a href="#support" class="block py-2 text-slate-300 hover:text-neonPink border-b border-darkBorder">Text
-                Support</a>
-            <a href="#faq" class="block py-2 text-slate-300 hover:text-neonBlue">FAQ</a>
-            <a href="sms:15024308613"
-                class="block text-center y2k-btn-pink text-white font-extrabold py-2.5 rounded-lg shadow mt-2">
-                Text 1-502-430-8613
-            </a>
+        <!-- Y2K Cyber Header Banner -->
+        <div id="header-banner">
+            <h1 class="y2k-title">PGADHealingLine</h1>
+            <div class="y2k-subtitle">PERSISTENT GENITAL AROUSAL DISORDER, FGM PREVENTION & NERVE EDUCATION
+            </div>
         </div>
-    </header>
 
-    <main class="flex-grow">
-        <!-- Hero Section -->
-        <section class="relative py-16 lg:py-24 overflow-hidden scanlines bg-black">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="grid lg:grid-cols-12 gap-12 items-center">
-                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                        <div
-                            class="inline-flex items-center gap-2 bg-black border border-neonGreen text-neonGreen px-3.5 py-1.5 rounded-full text-xs font-extrabold tracking-widest uppercase shadow-[0_0_10px_rgba(57,255,20,0.3)]">
-                            <i class="fa-solid fa-comment-sms"></i> Text Support Line: 1-502-430-8613
-                        </div>
-                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-none tracking-tight">
-                            HEALING & PREVENTION <span class="text-neonPink block sm:inline glow-pink">VIA TEXT</span>
-                        </h1>
-                        <p
-                            class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-nexa">
-                            Founded by a mental health crisis counselor with firsthand experience of FGM/C. All text
-                            messages route directly and confidentially to <strong>1-502-430-8613</strong>.
-                        </p>
+        <!-- Vintage Ticker Marquee -->
+        <marquee scrollamount="4">
+            *** WELCOME TO PGADHEALINGLINE *** TEXT 1-502-430-8613 FOR DISCREET SUPPORT *** EDUCATIONAL INSIGHT: WHY
+            EXTERNAL CUTTING CANNOT FULLY REMOVE CLITORAL ANATOMY & HOW FGM COMPLICATIONS INTENSIFY PGAD *** EMAIL US AT
+            THE BOTTOM FOR ADVICE ***
+        </marquee>
 
-                        <div
-                            class="p-4 bg-darkCard rounded-xl border border-neonBlue box-glow-blue text-xs text-slate-200 flex items-start gap-3 text-left max-w-xl mx-auto lg:mx-0">
-                            <i class="fa-solid fa-circle-info text-neonBlue text-xl mt-0.5 shrink-0"></i>
-                            <div>
-                                <strong class="text-neonBlue uppercase tracking-wider block mb-1">Open To All:</strong>
-                                You do <strong>not</strong> have to have undergone FGM/C to text us. We help survivors,
-                                people seeking prevention advice for children, partners, and anyone needing confidential
-                                guidance.
-                            </div>
-                        </div>
+        <!-- Main Navigation Bar -->
+        <div id="navbar">
+            <a href="#about"><i class="fa fa-info-circle"></i> ABOUT US</a>
+            <a href="#anatomy"><i class="fa fa-sitemap"></i> INTERNAL CLITORIS ANATOMY</a>
+            <a href="#fgm-pgad"><i class="fa fa-dna"></i> FGM & PGAD LINK</a>
+            <a href="#support-email"><i class="fa fa-envelope"></i> EMAIL SUPPORT</a>
+        </div>
 
-                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-                            <a href="sms:15024308613"
-                                class="w-full sm:w-auto text-center y2k-btn-pink text-white font-black px-6 py-4 rounded-xl text-xs uppercase tracking-widest shadow-lg flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-comment-sms"></i> Text 1-502-430-8613 Now
-                            </a>
-                        </div>
-                    </div>
+        <!-- Main Content Area -->
+        <main id="main-wrapper">
 
-                    <!-- Hero Visual / Counselor Card -->
-                    <div class="lg:col-span-5">
-                        <div class="bg-darkCard rounded-2xl p-6 sm:p-8 border border-neonPink box-glow-pink relative">
-                            <div
-                                class="absolute -top-3 -right-3 bg-neonGreen text-black font-black text-[10px] uppercase tracking-wider px-3 py-1 rounded shadow-[0_0_10px_#39ff14]">
-                                Discreet Text Care
-                            </div>
-                            <div class="flex items-center space-x-4 mb-6">
-                                <div
-                                    class="w-14 h-14 rounded-xl bg-black border-2 border-neonPink flex items-center justify-center text-neonPink text-2xl font-bold shadow-[0_0_10px_#ff00aa]">
-                                    <i class="fa-solid fa-mobile-screen-button"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-extrabold text-white text-lg tracking-wide">Crisis Text Line
-                                    </h3>
-                                    <p class="text-xs text-neonBlue font-semibold">Direct Text: 1-502-430-8613</p>
-                                </div>
-                            </div>
-                            <blockquote
-                                class="text-slate-300 text-xs italic border-l-2 border-neonPink pl-4 py-1 mb-6 leading-relaxed">
-                                "FGM rests on the misconception that a woman's sexual organ or desire can be completely
-                                cut away. Text us anytime to share, ask questions, or begin processing at your own
-                                comfort level."
-                            </blockquote>
-
-                            <div
-                                class="grid grid-cols-2 gap-3 text-center text-[11px] font-bold uppercase tracking-wider text-slate-300 border-t border-darkBorder pt-4">
-                                <div class="bg-black p-3 rounded-lg border border-darkBorder">
-                                    <i class="fa-solid fa-lock text-neonGreen text-base block mb-1"></i>
-                                    100% Encrypted SMS
-                                </div>
-                                <div class="bg-black p-3 rounded-lg border border-darkBorder">
-                                    <i class="fa-solid fa-shield text-neonBlue text-base block mb-1"></i>
-                                    Discreet Advice
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="py-16 bg-darkCard border-y border-darkBorder">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-12">
-                    <span class="text-neonBlue text-xs font-black uppercase tracking-widest">Our Mission</span>
-                    <h2 class="text-3xl font-black text-white mt-2 glow-blue">Text Support, Guidance & Prevention</h2>
-                    <p class="text-slate-400 text-sm mt-2">Connecting you securely via text message to 1-502-430-8613
-                        for confidential counseling and physiological education.</p>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div
-                        class="bg-black p-6 rounded-xl border border-neonPink/40 hover:border-neonPink transition shadow-lg">
-                        <div
-                            class="w-12 h-12 bg-black border border-neonPink rounded-lg text-neonPink flex items-center justify-center text-xl font-bold mb-4 shadow-[0_0_10px_rgba(255,0,170,0.3)]">
-                            <i class="fa-solid fa-hand-holding-heart"></i>
-                        </div>
-                        <h3 class="text-lg font-extrabold text-white mb-2 tracking-wide">Recovery & Prevention</h3>
-                        <p class="text-slate-300 text-xs leading-relaxed">
-                            Whether you need help processing physical trauma via text or advice on protecting a
-                            community member from cutting—text 1-502-430-8613.
-                        </p>
-                    </div>
-
-                    <div
-                        class="bg-black p-6 rounded-xl border border-neonBlue/40 hover:border-neonBlue transition shadow-lg">
-                        <div
-                            class="w-12 h-12 bg-black border border-neonBlue rounded-lg text-neonBlue flex items-center justify-center text-xl font-bold mb-4 shadow-[0_0_10px_rgba(0,240,255,0.3)]">
-                            <i class="fa-solid fa-comments"></i>
-                        </div>
-                        <h3 class="text-lg font-extrabold text-white mb-2 tracking-wide">Wide Range of Topics</h3>
-                        <p class="text-slate-300 text-xs leading-relaxed">
-                            Discuss relationship strain, body disconnect, fear, nerve pain, or intimacy questions
-                            completely over text. No phone calls required.
-                        </p>
-                    </div>
-
-                    <div
-                        class="bg-black p-6 rounded-xl border border-neonGreen/40 hover:border-neonGreen transition shadow-lg">
-                        <div
-                            class="w-12 h-12 bg-black border border-neonGreen rounded-lg text-neonGreen flex items-center justify-center text-xl font-bold mb-4 shadow-[0_0_10px_rgba(57,255,20,0.3)]">
-                            <i class="fa-solid fa-dna"></i>
-                        </div>
-                        <h3 class="text-lg font-extrabold text-white mb-2 tracking-wide">Anatomy as Empowerment</h3>
-                        <p class="text-slate-300 text-xs leading-relaxed">
-                            We use true internal anatomy via text breakdowns to prove that women will always have a
-                            clitoris, debunking cutting myths.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interactive Anatomy Section -->
-        <section id="anatomy" class="py-20 bg-black">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-12">
-                    <span
-                        class="text-neonPink font-black text-xs tracking-widest uppercase bg-black border border-neonPink px-3 py-1 rounded-full shadow-[0_0_10px_#ff00aa]">Anatomical
-                        Truth</span>
-                    <h2 class="text-3xl sm:text-4xl font-black text-white mt-4 tracking-tight">The Clitoris Belongs
-                        Inside</h2>
-                    <p class="text-slate-300 text-sm mt-3 leading-relaxed">
-                        FGM/C cannot remove the clitoris. <strong>Over 90% of the clitoral structure lives deep inside
-                            the pelvic floor</strong>, safely beyond external procedures.
+            <!-- Sidebar (Left Column) -->
+            <aside class="sidebar">
+                <div class="cyber-box-pink">
+                    <div class="box-title title-pink"><i class="fa fa-comments"></i> TEXT LINE</div>
+                    <p style="font-size:11px; line-height:1.4;">
+                        Need safe, judgment-free text support for pelvic nerve distress or arousal conditions?
                     </p>
-                </div>
-
-                <!-- Interactive SVG Anatomy Explorer -->
-                <div
-                    class="grid lg:grid-cols-12 gap-8 items-center bg-darkCard rounded-2xl p-6 sm:p-8 border border-neonBlue box-glow-blue">
-
-                    <div
-                        class="lg:col-span-7 bg-black rounded-xl p-4 sm:p-6 text-white relative flex flex-col items-center justify-center min-h-[420px] border border-darkBorder">
-                        <div
-                            class="absolute top-4 left-4 text-xs bg-darkCard text-neonBlue px-3 py-1.5 rounded border border-neonBlue/40 font-bold tracking-wider">
-                            <i class="fa-solid fa-hand-pointer mr-1"></i> CLICK NEON PARTS TO INSPECT:
-                        </div>
-
-                        <svg viewBox="0 0 600 450" class="w-full max-w-lg h-auto my-4" id="clitoris-svg">
-                            <defs>
-                                <radialGradient id="glansNeon" cx="50%" cy="50%" r="50%">
-                                    <stop offset="0%" stop-color="#ff66cc" />
-                                    <stop offset="100%" stop-color="#ff00aa" />
-                                </radialGradient>
-                                <linearGradient id="cruraNeon" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#ff00aa" />
-                                    <stop offset="100%" stop-color="#880055" />
-                                </linearGradient>
-                                <linearGradient id="bulbNeon" x1="0%" y1="0%" x2="0%" y2="100%">
-                                    <stop offset="0%" stop-color="#00f0ff" />
-                                    <stop offset="100%" stop-color="#005588" />
-                                </linearGradient>
-                            </defs>
-
-                            <path d="M 180 340 Q 300 120 420 340 Q 300 240 180 340 Z" fill="#0d0d14" stroke="#2a2a3d"
-                                stroke-width="2" />
-                            <text x="300" y="220" text-anchor="middle" fill="#555577" font-size="11"
-                                font-family="Montserrat" font-weight="bold">Internal Pelvic Arch (Bone Structure)</text>
-
-                            <g id="part-bulbs" class="anatomy-hover" onclick="selectAnatomy('bulbs')">
-                                <path d="M 255 240 C 240 280, 245 350, 270 375 C 285 365, 275 300, 275 250 Z"
-                                    fill="url(#bulbNeon)" opacity="0.9" stroke="#00f0ff" stroke-width="1.5" />
-                                <path d="M 345 240 C 360 280, 355 350, 330 375 C 315 365, 325 300, 325 250 Z"
-                                    fill="url(#bulbNeon)" opacity="0.9" stroke="#00f0ff" stroke-width="1.5" />
-                            </g>
-
-                            <ellipse cx="300" cy="320" rx="20" ry="35" fill="#050508" stroke="#00f0ff" stroke-width="1"
-                                stroke-dasharray="3 3" />
-                            <text x="300" y="324" text-anchor="middle" fill="#00f0ff" font-size="9"
-                                font-family="Montserrat">Vaginal Canal</text>
-
-                            <g id="part-crura" class="anatomy-hover" onclick="selectAnatomy('crura')">
-                                <path d="M 285 160 Q 230 200 190 330 Q 215 345 260 220 Z" fill="url(#cruraNeon)"
-                                    stroke="#ff00aa" stroke-width="1.5" />
-                                <path d="M 315 160 Q 370 200 410 330 Q 385 345 340 220 Z" fill="url(#cruraNeon)"
-                                    stroke="#ff00aa" stroke-width="1.5" />
-                            </g>
-
-                            <g id="part-body" class="anatomy-hover" onclick="selectAnatomy('body')">
-                                <path d="M 282 170 L 282 120 C 282 105, 318 105, 318 120 L 318 170 Z" fill="#ff00aa"
-                                    stroke="#ffffff" stroke-width="1.5" />
-                            </g>
-
-                            <g id="part-nerves" class="anatomy-hover" onclick="selectAnatomy('nerves')">
-                                <path d="M 160 370 Q 210 310 285 165" fill="none" stroke="#39ff14" stroke-width="3"
-                                    stroke-dasharray="5 3" />
-                                <path d="M 440 370 Q 390 310 315 165" fill="none" stroke="#39ff14" stroke-width="3"
-                                    stroke-dasharray="5 3" />
-                                <path d="M 285 165 L 300 110" fill="none" stroke="#39ff14" stroke-width="3" />
-                                <path d="M 210 300 Q 250 280 270 350" fill="none" stroke="#39ff14" stroke-width="2" />
-                                <path d="M 390 300 Q 350 280 330 350" fill="none" stroke="#39ff14" stroke-width="2" />
-                            </g>
-
-                            <g id="part-glans" class="anatomy-hover" onclick="selectAnatomy('glans')">
-                                <circle cx="300" cy="105" r="14" fill="url(#glansNeon)" stroke="#ffffff"
-                                    stroke-width="2" />
-                            </g>
-
-                            <line x1="300" y1="75" x2="300" y2="90" stroke="#ff00aa" stroke-width="1.5" />
-                            <text x="300" y="65" text-anchor="middle" fill="#ff00aa" font-size="11" font-weight="bold"
-                                font-family="Montserrat">Outer Glans Tip (~10%)</text>
-
-                            <line x1="410" y1="260" x2="475" y2="260" stroke="#ff00aa" stroke-width="1.5" />
-                            <text x="480" y="264" text-anchor="start" fill="#ff00aa" font-size="10" font-weight="bold"
-                                font-family="Montserrat">7-10cm Internal Crura</text>
-
-                            <line x1="190" y1="260" x2="125" y2="260" stroke="#39ff14" stroke-width="1.5" />
-                            <text x="120" y="264" text-anchor="end" fill="#39ff14" font-size="10" font-weight="bold"
-                                font-family="Montserrat">Deep Nerve Network</text>
-                        </svg>
-
-                        <div class="text-center text-[11px] font-bold uppercase tracking-wider text-slate-400 mt-2">
-                            <span class="inline-block w-3 h-3 bg-neonPink rounded-full mr-1"></span> Internal Body/Crura
-                            <span class="inline-block w-3 h-3 bg-neonBlue rounded-full ml-3 mr-1"></span> Vestibular
-                            Bulbs
-                            <span class="inline-block w-3 h-3 bg-neonGreen rounded-full ml-3 mr-1"></span> Pudendal
-                            Nerves
-                        </div>
-                    </div>
-
-                    <!-- Dynamic Card Display -->
-                    <div class="lg:col-span-5 flex flex-col justify-between h-full">
-                        <div id="anatomy-details-card"
-                            class="bg-black rounded-xl p-6 border border-darkBorder flex-grow">
-                            <div class="inline-block bg-neonPink text-black text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded mb-3"
-                                id="anatomy-tag">
-                                Structural Overview
-                            </div>
-                            <h3 class="text-2xl font-black text-white mb-3 tracking-wide" id="anatomy-title">
-                                Deep Pelvic Architecture
-                            </h3>
-                            <p class="text-slate-300 text-xs leading-relaxed mb-4" id="anatomy-desc">
-                                Click any highlighted part of the SVG diagram to learn about its anatomical depth and
-                                why FGM cannot cut away internal sensation.
-                            </p>
-
-                            <div class="bg-darkCard p-4 rounded-lg border border-neonGreen/40 shadow-sm mt-4">
-                                <h4 class="font-extrabold text-neonGreen text-xs uppercase tracking-wide mb-1"
-                                    id="anatomy-fact-title">Key Empowerment Fact</h4>
-                                <p class="text-xs text-slate-300 leading-normal" id="anatomy-fact">
-                                    Regardless of the cut type, the clitoral body, 7–10cm crura, vestibular bulbs, and
-                                    pudendal nerve roots remain fully present inside the body.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Selector buttons -->
-                        <div class="grid grid-cols-2 gap-2 mt-4">
-                            <button onclick="selectAnatomy('body')"
-                                class="py-2.5 px-3 text-xs bg-black border border-neonPink/50 rounded-lg text-white font-bold hover:bg-neonPink hover:text-black transition text-left">
-                                <i class="fa-solid fa-microscope text-neonPink mr-1"></i> Clitoral Body
-                            </button>
-                            <button onclick="selectAnatomy('crura')"
-                                class="py-2.5 px-3 text-xs bg-black border border-neonPink/50 rounded-lg text-white font-bold hover:bg-neonPink hover:text-black transition text-left">
-                                <i class="fa-solid fa-code-branch text-neonPink mr-1"></i> Crura ("Legs")
-                            </button>
-                            <button onclick="selectAnatomy('nerves')"
-                                class="py-2.5 px-3 text-xs bg-black border border-neonGreen/50 rounded-lg text-white font-bold hover:bg-neonGreen hover:text-black transition text-left">
-                                <i class="fa-solid fa-bolt text-neonGreen mr-1"></i> Pudendal Nerves
-                            </button>
-                            <button onclick="selectAnatomy('bulbs')"
-                                class="py-2.5 px-3 text-xs bg-black border border-neonBlue/50 rounded-lg text-white font-bold hover:bg-neonBlue hover:text-black transition text-left">
-                                <i class="fa-solid fa-circle-dot text-neonBlue mr-1"></i> Vestibular Bulbs
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Myths & Nerve Reality Section -->
-        <section id="truths" class="py-20 bg-darkCard border-y border-darkBorder">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <span
-                        class="text-neonGreen font-black text-xs tracking-widest uppercase bg-black border border-neonGreen px-3 py-1 rounded-full">Biological
-                        Reality</span>
-                    <h2 class="text-3xl sm:text-4xl font-black text-white mt-4 glow-green">FGM Fails Its Intended Goal
-                    </h2>
-                    <p class="text-slate-300 mt-3 text-sm leading-relaxed">
-                        Cutting is historically intended to suppress female sexual desire. In reality, FGM fails to
-                        eliminate arousal because internal anatomy is intact, while causing severe medical damage and
-                        hyperactive nerve regrowth.
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div
-                        class="bg-black rounded-xl p-6 border border-neonPink/40 relative flex flex-col justify-between">
-                        <div>
-                            <div
-                                class="w-10 h-10 bg-neonPink text-black rounded-lg flex items-center justify-center font-bold mb-4 shadow-[0_0_10px_#ff00aa]">
-                                <i class="fa-solid fa-xmark text-lg"></i>
-                            </div>
-                            <h3 class="text-lg font-extrabold text-white mb-2">Arousal Persists</h3>
-                            <p class="text-slate-400 text-xs leading-relaxed mb-4">
-                                Cutting external tissue does not erase the internal organ or deep pelvic blood flow
-                                response during arousal.
-                            </p>
-                            <div class="bg-darkCard p-3.5 rounded-lg border-l-2 border-neonPink text-xs text-slate-300">
-                                <strong class="text-neonPink block mb-1">Empowerment Truth:</strong> Many survivors
-                                continue to experience desire and reach orgasm through internal pelvic stimulation.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-black rounded-xl p-6 border border-neonGreen/40 relative flex flex-col justify-between">
-                        <div>
-                            <div
-                                class="w-10 h-10 bg-neonGreen text-black rounded-lg flex items-center justify-center font-bold mb-4 shadow-[0_0_10px_#39ff14]">
-                                <i class="fa-solid fa-bolt text-lg"></i>
-                            </div>
-                            <h3 class="text-lg font-extrabold text-white mb-2">Hyperactive Nerves</h3>
-                            <p class="text-slate-400 text-xs leading-relaxed mb-4">
-                                Severed nerve pathways attempt to regrow inside scar tissue, forming painful nerve
-                                clusters called neuromas.
-                            </p>
-                            <div
-                                class="bg-darkCard p-3.5 rounded-lg border-l-2 border-neonGreen text-xs text-slate-300">
-                                <strong class="text-neonGreen block mb-1">Neuromas & Firing:</strong> This can cause
-                                unexpected hyper-sensitivity, involuntary firing, phantom arousal, or sharp burning
-                                pain.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-black rounded-xl p-6 border border-neonBlue/40 relative flex flex-col justify-between">
-                        <div>
-                            <div
-                                class="w-10 h-10 bg-neonBlue text-black rounded-lg flex items-center justify-center font-bold mb-4 shadow-[0_0_10px_#00f0ff]">
-                                <i class="fa-solid fa-triangle-exclamation text-lg"></i>
-                            </div>
-                            <h3 class="text-lg font-extrabold text-white mb-2">Permanent Physical Damage</h3>
-                            <p class="text-slate-400 text-xs leading-relaxed mb-4">
-                                Rather than a spiritual or chastity benefit, cutting results in long-term medical
-                                complications.
-                            </p>
-                            <div class="bg-darkCard p-3.5 rounded-lg border-l-2 border-neonBlue text-xs text-slate-300">
-                                <strong class="text-neonBlue block mb-1">Medical Damage:</strong> Tissue necrosis, dense
-                                keloid scar tissue, epidermal inclusion cysts, dyspareunia, and chronic urinary
-                                retention.
-                            </div>
-                        </div>
+                    <div style="text-align:center; margin:10px 0;">
+                        <a href="sms:15024308613" class="text-neon-btn" style="font-size:16px; padding:5px 8px;">
+                            <i class="fa fa-mobile"></i> 1-502-430-8613
+                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Counseling Form & Text Simulator Section -->
-        <section id="support" class="py-20 bg-black">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid lg:grid-cols-12 gap-12">
-
-                    <!-- Left: Confidential Text Intake Form -->
-                    <div class="lg:col-span-6 space-y-6">
-                        <div>
-                            <span class="text-neonPink font-black text-xs tracking-widest uppercase">Safe &
-                                Confidential</span>
-                            <h2 class="text-3xl font-black text-white mt-2">Text Us For Support Or Advice</h2>
-                            <p class="text-slate-400 text-xs mt-1">
-                                All texts route directly to <strong>1-502-430-8613</strong>. No identity verification
-                                needed.
-                            </p>
-                        </div>
-
-                        <!-- Hotline Badges -->
-                        <div class="grid sm:grid-cols-1 gap-4">
-                            <a href="sms:15024308613"
-                                class="bg-darkCard p-4 rounded-xl border border-neonPink/50 flex items-start gap-3 hover:border-neonPink transition group">
-                                <div
-                                    class="w-10 h-10 rounded-lg bg-neonPink text-black flex items-center justify-center font-bold shrink-0 shadow-[0_0_10px_#ff00aa]">
-                                    <i class="fa-solid fa-comment-sms"></i>
-                                </div>
-                                <div>
-                                    <div class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Direct
-                                        Text Line</div>
-                                    <div
-                                        class="font-black text-white text-sm mt-0.5 group-hover:text-neonPink transition">
-                                        1-502-430-8613</div>
-                                    <div class="text-[10px] text-neonPink">Tap to Text via SMS 24/7</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <form id="counseling-form" onsubmit="handleTextFormSubmit(event)" class="space-y-4">
-                            <div>
-                                <label
-                                    class="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1">Your
-                                    Preferred Name / Alias</label>
-                                <input type="text" id="form-name" name="name" placeholder="e.g. Maya (or leave blank)"
-                                    class="w-full px-4 py-2.5 text-xs rounded-lg bg-black border border-darkBorder text-white focus:border-neonPink focus:ring-1 focus:ring-neonPink outline-none">
-                            </div>
-
-                            <div>
-                                <label
-                                    class="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1">Your
-                                    Mobile Number (For Text Reply)</label>
-                                <input type="text" id="form-contact" name="contact" required
-                                    placeholder="Your mobile phone number"
-                                    class="w-full px-4 py-2.5 text-xs rounded-lg bg-black border border-darkBorder text-white focus:border-neonPink outline-none">
-                            </div>
-
-                            <div>
-                                <label
-                                    class="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1">Your
-                                    Text Message</label>
-                                <textarea id="form-msg" name="message" rows="3"
-                                    placeholder="Share what you feel comfortable texting..."
-                                    class="w-full px-4 py-2.5 text-xs rounded-lg bg-black border border-darkBorder text-white focus:border-neonPink outline-none"></textarea>
-                            </div>
-
-                            <button type="submit"
-                                class="w-full y2k-btn-pink text-white font-black py-3 rounded-lg text-xs uppercase tracking-widest shadow-lg flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-paper-plane"></i> Send Text to 1-502-430-8613
-                            </button>
-                        </form>
-
-                        <div id="form-success"
-                            class="hidden p-4 bg-black text-neonGreen rounded-lg text-xs border border-neonGreen text-center font-bold">
-                            <i class="fa-solid fa-circle-check text-lg block mb-1"></i>
-                            Preparing text message to 1-502-430-8613. Your messaging app will open shortly.
-                        </div>
-                    </div>
-
-                    <!-- Right: Text Chat Assistant Simulator -->
-                    <div class="lg:col-span-6 flex flex-col justify-between">
-                        <div
-                            class="bg-darkCard rounded-2xl p-6 border border-neonBlue box-glow-blue flex flex-col h-full min-h-[480px]">
-                            <div class="border-b border-darkBorder pb-4 mb-4 flex items-center justify-between">
-                                <div class="flex items-center space-x-3">
-                                    <span class="w-3 h-3 bg-neonGreen rounded-full animate-ping"></span>
-                                    <div>
-                                        <h4 class="font-black text-xs text-white uppercase tracking-wider">Live Text
-                                            Simulator</h4>
-                                        <span class="text-[10px] text-neonBlue">Directly Linked to 1-502-430-8613</span>
-                                    </div>
-                                </div>
-                                <a href="sms:15024308613"
-                                    class="text-[10px] bg-black text-neonGreen border border-neonGreen px-2.5 py-1 rounded font-bold hover:bg-neonGreen hover:text-black transition">
-                                    <i class="fa-solid fa-comment-sms mr-1"></i> TEXT 1-502-430-8613
-                                </a>
-                            </div>
-
-                            <!-- Chat Messages Window -->
-                            <div id="chat-messages"
-                                class="flex-grow space-y-4 overflow-y-auto max-h-[350px] pr-2 custom-scrollbar text-xs">
-                                <div class="flex items-start gap-3">
-                                    <div
-                                        class="w-8 h-8 rounded-lg bg-neonBlue text-black flex items-center justify-center text-xs shrink-0 font-bold">
-                                        <i class="fa-solid fa-headset"></i>
-                                    </div>
-                                    <div
-                                        class="bg-black p-3.5 rounded-xl border border-darkBorder text-slate-200 max-w-[85%] leading-relaxed">
-                                        Hello. All inquiries connect directly to text number
-                                        <strong>1-502-430-8613</strong>. Choose a topic below to explore guidance or
-                                        text us anytime:
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Interactive Buttons -->
-                            <div class="mt-4 border-t border-darkBorder pt-4 space-y-2">
-                                <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider mb-2">Select a
-                                    topic:</p>
-                                <div class="flex flex-wrap gap-2">
-                                    <button onclick="sendChatMessage('prevention')"
-                                        class="text-[11px] bg-black hover:border-neonGreen text-slate-300 border border-darkBorder px-3 py-2 rounded-lg font-bold transition text-left">
-                                        <i class="fa-solid fa-shield text-neonGreen mr-1"></i> "How do I prevent FGM?"
-                                    </button>
-                                    <button onclick="sendChatMessage('arousal')"
-                                        class="text-[11px] bg-black hover:border-neonPink text-slate-300 border border-darkBorder px-3 py-2 rounded-lg font-bold transition text-left">
-                                        <i class="fa-solid fa-heart text-neonPink mr-1"></i> "Can survivors still feel
-                                        arousal?"
-                                    </button>
-                                    <button onclick="sendChatMessage('pain')"
-                                        class="text-[11px] bg-black hover:border-neonBlue text-slate-300 border border-darkBorder px-3 py-2 rounded-lg font-bold transition text-left">
-                                        <i class="fa-solid fa-bolt text-neonBlue mr-1"></i> "Why do I feel nerve pain?"
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="py-16 bg-darkCard border-t border-darkBorder">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <span class="text-neonBlue text-xs font-black uppercase tracking-widest">Common Questions</span>
-                    <h2 class="text-3xl font-black text-white mt-2 glow-blue">Frequently Asked Questions</h2>
-                </div>
-
-                <div class="space-y-4">
-                    <div class="bg-black rounded-xl border border-darkBorder overflow-hidden">
-                        <button onclick="toggleFaq(this)"
-                            class="w-full text-left p-5 font-bold text-white text-xs sm:text-sm flex justify-between items-center hover:text-neonPink transition uppercase tracking-wider">
-                            <span>Do I have to have undergone FGM/C to text 1-502-430-8613?</span>
-                            <i class="fa-solid fa-chevron-down text-neonPink transition-transform duration-200"></i>
-                        </button>
-                        <div class="hidden p-5 pt-0 text-slate-300 text-xs border-t border-darkBorder leading-relaxed">
-                            No. Our line offers recovery AND prevention support via text. We encourage mothers, fathers,
-                            youth, and community members seeking to protect someone from FGM/C to reach out for guidance
-                            at 1-502-430-8613.
-                        </div>
-                    </div>
-
-                    <div class="bg-black rounded-xl border border-darkBorder overflow-hidden">
-                        <button onclick="toggleFaq(this)"
-                            class="w-full text-left p-5 font-bold text-white text-xs sm:text-sm flex justify-between items-center hover:text-neonBlue transition uppercase tracking-wider">
-                            <span>Why emphasize the internal clitoral body?</span>
-                            <i class="fa-solid fa-chevron-down text-neonBlue transition-transform duration-200"></i>
-                        </button>
-                        <div class="hidden p-5 pt-0 text-slate-300 text-xs border-t border-darkBorder leading-relaxed">
-                            Because FGM/C rests on the myth that cutting external skin removes female sexual desire or
-                            the clitoris itself. Showing that ~90% of the clitoral body and deep nerve roots sit behind
-                            the pubic bone refutes cutting rationale and brings hope to survivors.
-                        </div>
-                    </div>
-
-                    <div class="bg-black rounded-xl border border-darkBorder overflow-hidden">
-                        <button onclick="toggleFaq(this)"
-                            class="w-full text-left p-5 font-bold text-white text-xs sm:text-sm flex justify-between items-center hover:text-neonGreen transition uppercase tracking-wider">
-                            <span>What causes hyperactive nerve firing or unexpected sensitivity?</span>
-                            <i class="fa-solid fa-chevron-down text-neonGreen transition-transform duration-200"></i>
-                        </button>
-                        <div class="hidden p-5 pt-0 text-slate-300 text-xs border-t border-darkBorder leading-relaxed">
-                            When surface nerves are severed, cut nerve trunks often regrow into scar tissue forming
-                            neuromas. These trapped nerves can trigger intense hyper-sensitivity, persistent burning, or
-                            paradoxical arousal signals. Text 1-502-430-8613 to discuss management strategies.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Y2K Cyber Footer -->
-    <footer class="bg-black text-slate-400 py-12 border-t border-darkBorder">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div class="md:col-span-2 space-y-3">
-                    <div class="flex items-center space-x-2 text-white font-black text-lg tracking-wider font-y2k">
-                        <i class="fa-solid fa-comment-sms text-neonPink"></i>
-                        <span>HealingFromFGMTextLine</span>
-                    </div>
-                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
-                        Direct text line: <strong>1-502-430-8613</strong>. Combining lived experience, crisis text
-                        counseling techniques, and internal clitoral science.
-                    </p>
-                </div>
-
-                <div>
-                    <h4 class="text-white text-xs font-black uppercase tracking-widest mb-3">Navigation</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="#about" class="hover:text-neonPink transition">About Text Line</a></li>
-                        <li><a href="#anatomy" class="hover:text-neonBlue transition">Internal Anatomy Diagram</a></li>
-                        <li><a href="#truths" class="hover:text-neonGreen transition">Neurological Realities</a></li>
-                        <li><a href="#support" class="hover:text-neonPink transition">Confidential Text Advice</a></li>
+                <div class="cyber-box">
+                    <div class="box-title title-blue"><i class="fa fa-bar-chart"></i> QUICK FACTS</div>
+                    <ul style="padding-left:15px; margin:0; font-size:11px; line-height:1.6;">
+                        <li><strong>90% Internal:</strong> Deep pelvic structure remains intact.</li>
+                        <li><strong>Neuroma Risk:</strong> Scar tissue triggers false nerve signals.</li>
+                        <li><strong>Confidential:</strong> Safe peer support and guidance.</li>
                     </ul>
                 </div>
 
-                <div>
-                    <h4 class="text-white text-xs font-black uppercase tracking-widest mb-3">Instant Privacy</h4>
-                    <button onclick="quickExit()"
-                        class="w-full bg-black hover:bg-neonPink hover:text-black text-neonPink font-bold text-xs py-2.5 rounded border border-neonPink transition tracking-wider uppercase">
-                        <i class="fa-solid fa-power-off mr-1"></i> Hide Page (Google)
-                    </button>
+            </aside>
+
+            <!-- Content Column (Right Area) -->
+            <div class="content-area">
+
+                <!-- Hero Banner -->
+                <div class="hero-banner">
+                    <h1>VALIDATION, EDUCATION & RECOVERY SUPPORT</h1>
+                    <p style="color:#00f0ff; font-size:12px; line-height:1.4; margin-bottom:10px;">
+                        Specialized support for Persistent Genital Arousal Disorder (PGAD), pelvic nerve trauma, and
+                        female genital mutilation (FGM) prevention & recovery complications.
+                    </p>
+                    <a href="sms:15024308613" class="text-neon-btn">
+                        <i class="fa fa-mobile"></i> TEXT 1-502-430-8613
+                    </a>
                 </div>
+
+                <!-- 1. ABOUT US SECTION (Right below header/hero) -->
+                <section id="about" class="cyber-box">
+                    <div class="box-title title-blue"><i class="fa fa-info-circle"></i> ABOUT US</div>
+                    <p style="line-height:1.5; margin-bottom:8px;">
+                        Welcome to <strong>PGADHealingLine</strong>. Our web portal and text hotline was founded to
+                        provide compassionate guidance, medical insights, and peer support for individuals experiencing
+                        Persistent Genital Arousal Disorder (PGAD), pudendal nerve entrapment, and complications
+                        stemming from CSA/FGM.
+                    </p>
+                    <p style="line-height:1.5; margin:0;">
+                        We believe that true healing begins with accurate physiological understanding and a safe space
+                        to share your experience without shame or judgment. Whether you are navigating unprovoked
+                        neurological arousal or seeking prevention and recovery advice, our confidential channels are
+                        open to support you.
+                    </p>
+                </section>
+
+                <!-- 2. INTERNAL CLITORIS ANATOMY EDUCATION SECTION -->
+                <section id="anatomy" class="cyber-box-pink">
+                    <div class="box-title title-pink"><i class="fa fa-sitemap"></i> INTERNAL CLITORIS ANATOMY EDUCATION
+                    </div>
+                    <p style="font-size:11px; margin-bottom:10px; line-height:1.4;">
+                        A common misconception is that external cutting can fully remove the clitoris. In biological
+                        reality, <strong>over 90% of the clitoral structure and its extensive nerve pathways live deep
+                            inside the pelvic floor</strong>. Click the diagram regions below to explore:
+                    </p>
+
+                    <div class="anatomy-container">
+                        <svg viewBox="0 0 500 240" style="width:100%; max-width:460px; height:auto;">
+                            <rect x="225" y="15" width="50" height="85" fill="#120024" stroke="#00f0ff"
+                                stroke-width="1.5" />
+                            <text x="250" y="28" fill="#00f0ff" font-size="8" text-anchor="middle"
+                                font-family="Orbitron">SACRAL SPINE</text>
+
+                            <!-- Interactive Nodes -->
+                            <circle id="part-spine" class="anatomy-part" cx="250" cy="65" r="12" fill="#ff00aa"
+                                opacity="0.8" onclick="showAnatomy('spine')" />
+                            <text x="250" y="68" fill="#fff" font-size="7" text-anchor="middle"
+                                font-weight="bold">NERVES</text>
+
+                            <path d="M 235 75 Q 160 120 120 180" fill="none" stroke="#39ff14" stroke-width="2"
+                                stroke-dasharray="3 2" />
+                            <path d="M 265 75 Q 340 120 380 180" fill="none" stroke="#39ff14" stroke-width="2"
+                                stroke-dasharray="3 2" />
+
+                            <g id="part-crura" class="anatomy-part" onclick="showAnatomy('crura')">
+                                <circle cx="140" cy="150" r="14" fill="#00f0ff" opacity="0.8" />
+                                <circle cx="360" cy="150" r="14" fill="#00f0ff" opacity="0.8" />
+                                <text x="140" y="153" fill="#000" font-size="7" text-anchor="middle"
+                                    font-weight="bold">CRURA</text>
+                                <text x="360" y="153" fill="#000" font-size="7" text-anchor="middle"
+                                    font-weight="bold">CRURA</text>
+                            </g>
+
+                            <g id="part-bulbs" class="anatomy-part" onclick="showAnatomy('bulbs')">
+                                <path d="M 180 190 Q 250 220 320 190 Q 250 160 180 190 Z" fill="#ff00aa" opacity="0.7"
+                                    stroke="#fff" />
+                                <text x="250" y="193" fill="#fff" font-size="8" text-anchor="middle"
+                                    font-weight="bold">INTERNAL VASCULAR BULBS (90%)</text>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div id="anatomy-display"
+                        style="background:#000; border:1px solid #ff00aa; padding:8px; margin-top:8px; font-size:11px;">
+                        <strong id="anatomy-title" style="color:#ff00aa;">Click a diagram component above...</strong>
+                        <p id="anatomy-desc" style="color:#e2e8f0; margin:3px 0 0 0;">
+                            Examine how internal anatomy and deep nerve networks remain intact inside the pelvis.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Section: FGM & PGAD Connection -->
+                <section id="fgm-pgad" class="cyber-box">
+                    <div class="box-title title-blue"><i class="fa fa-dna"></i> WHY FGM COMPLICATIONS INTENSIFY (OR EVEN
+                        CAN CAUSE) PGAD</div>
+                    <p style="line-height:1.5; margin-bottom:8px;">
+                        Because cutting cannot fully excise internal erectile tissue (such as the 7–10cm crura and
+                        vestibular bulbs) or deep pudendal nerve roots, the physical architecture for arousal remains
+                        active, just with more signals of pain and discomfort.
+                    </p>
+                    <p style="line-height:1.5; margin:0;">
+                        Furthermore, severed surface nerves often form painful clusters called <em>neuromas</em> trapped
+                        inside post-cutting scar tissue. When these trapped nerve endings fire continuously, they can
+                        induce intense burning pressure, hyper-sensitivity, and persistent unwanted arousal—heavily
+                        worsening or triggering PGAD symptoms.
+                    </p>
+                </section>
+
+                <!-- 3. BOTTOM SECTION: EMAIL FOR SUPPORT OR ADVICE -->
+                <section id="support-email" class="cyber-box-green">
+                    <div class="box-title title-green"><i class="fa fa-envelope"></i> EMAIL US FOR SUPPORT OR ADVICE
+                    </div>
+                    <p style="font-size:11px; line-height:1.4; margin-bottom:10px;">
+                        Prefer email over text? Send your confidential questions or requests for guidance directly to
+                        our support team. All submissions remain strictly private.
+                    </p>
+
+                    <form action="https://formspree.io/f/maeoydza" method="POST" id="support-email-form">
+                        <label style="font-size:10px; text-transform:uppercase; color:#39ff14;">Your Preferred Alias /
+                            Name:</label>
+                        <input type="text" id="email-name" name="name" placeholder="e.g. Sarah (or leave blank)">
+
+                        <label style="font-size:10px; text-transform:uppercase; color:#39ff14;">Your Email Address (For
+                            Reply):</label>
+                        <input type="email" id="email-address" name="email" required
+                            placeholder="your.email@example.com">
+
+                        <label style="font-size:10px; text-transform:uppercase; color:#39ff14;">Your Message or
+                            Question:</label>
+                        <textarea id="email-msg" name="message" rows="3" required
+                            placeholder="Share what you feel comfortable writing..."></textarea>
+
+                        <input type="submit" value="SEND EMAIL MESSAGE"
+                            style="background: linear-gradient(180deg, #39ff14 0%, #006622 100%); color: #000;">
+                    </form>
+
+                    <div id="email-success"
+                        style="display:none; color:#39ff14; font-weight:bold; margin-top:8px; text-align:center;">
+                        <i class="fa fa-check-circle"></i> Opening your email client to send message securely...
+                    </div>
+                </section>
+
             </div>
 
-            <div
-                class="border-t border-darkBorder pt-6 text-center text-[11px] text-slate-500 font-bold uppercase tracking-wider">
-                <p>&copy; 2026 HealingFromFGMTextLine. Recovery & Prevention Support. Text: 1-502-430-8613</p>
-            </div>
+        </main>
+
+        <!-- 2005 Retro Footer -->
+        <div id="footer">
+            <p>
+                &copy; PGADHealingLine. All rights reserved. Direct Text Line:
+                <strong>1-502-430-8613</strong>.
+                <br>
+                Educational peer support and anatomical awareness. Not a substitute for formal medical treatment.
+            </p>
         </div>
-    </footer>
 
-    <!-- JavaScript Code -->
+    </div>
+
+    <!-- Scripts -->
     <script>
-        const anatomyData = {
-            body: {
-                tag: "Internal Structure",
-                title: "The Clitoral Body (Corpus)",
-                desc: "The clitoral body extends inward behind the pubic bone for several centimeters. It consists of cavernous erectile tissue that engorges with blood during arousal. FGM cannot cut away this internal structure.",
-                factTitle: "Why This Discourages FGM",
-                fact: "Proving that the erectile body sits safely inside the pelvis refutes the false premise that cutting removes a woman's sexual organ."
-            },
-            crura: {
-                tag: "7–10cm Legs",
-                title: "The Crura ('Legs' of the Clitoris)",
-                desc: "Two lateral arms of erectile tissue, each 7 to 10 centimeters long. They flare backward and downward along the pubic arch, wrapping around the lower vaginal canal.",
-                factTitle: "Deep Pelvic Sensation",
-                fact: "Because the crura wrap around the pelvic floor, deep pressure or internal touch can trigger sexual pleasure even when external tissue was cut."
-            },
-            nerves: {
-                tag: "Pudendal Network",
-                title: "Deep Pudendal Nerves",
-                desc: "Major nerve trunks branch off the pudendal nerve deep within pelvic bone and muscle, far beyond the reach of external cutting.",
-                factTitle: "Neuromas & Firing",
-                fact: "Severed nerve tips inside scar tissue often form neuromas, causing hyperactive nerve firing, unexpected burning sensitivity, or paradoxical arousal."
-            },
-            bulbs: {
-                tag: "Vascular Tissue",
-                title: "Vestibular Bulbs",
-                desc: "Two elongated masses of erectile tissue flanking the vaginal opening beneath pelvic muscle. During arousal, they fill with blood causing engorgement.",
-                factTitle: "Resilient Engorgement",
-                fact: "These bulbs maintain full vascular function beneath muscle layers, enabling warmth and erectile response deep in the pelvis."
-            },
-            glans: {
-                tag: "External Tip (~10%)",
-                title: "The Clitoral Glans Tip",
-                desc: "The external tip visible above the urethra. It accounts for only ~10% of the total clitoral mass.",
-                factTitle: "Tip vs Deep Mass",
-                fact: "External cutting removes or scars outer surface skin, but leaves 90% of the organ's erectile mass and nerve roots alive inside."
-            }
-        };
-
-        function selectAnatomy(key) {
-            const data = anatomyData[key];
-            if (!data) return;
-
-            document.getElementById('anatomy-tag').innerText = data.tag;
-            document.getElementById('anatomy-title').innerText = data.title;
-            document.getElementById('anatomy-desc').innerText = data.desc;
-            document.getElementById('anatomy-fact-title').innerText = data.factTitle;
-            document.getElementById('anatomy-fact').innerText = data.fact;
-
-            const ids = ['body', 'crura', 'nerves', 'bulbs', 'glans'];
-            ids.forEach(id => {
-                const el = document.getElementById(`part-${id}`);
-                if (el) {
-                    if (id === key) {
-                        el.setAttribute('opacity', '1');
-                        el.style.filter = 'drop-shadow(0px 0px 14px #ff00aa)';
-                    } else {
-                        el.setAttribute('opacity', '0.5');
-                        el.style.filter = 'none';
-                    }
-                }
-            });
-        }
-
         function quickExit() {
             window.location.replace("https://www.google.com");
         }
 
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        }
-
-        function toggleFaq(button) {
-            const content = button.nextElementSibling;
-            const icon = button.querySelector('i');
-            if (content.classList.contains('hidden')) {
-                content.classList.remove('hidden');
-                icon.classList.add('rotate-180');
-            } else {
-                content.classList.add('hidden');
-                icon.classList.remove('rotate-180');
+        const anatomyInfo = {
+            spine: {
+                title: "Sacral Spinal Nerves (S2-S4)",
+                desc: "Spinal nerve roots and conditions like Tarlov cysts can compress sensory pathways, sending continuous hyperactive signals to the pelvis."
+            },
+            crura: {
+                title: "Internal Clitoral Crura (7-10cm)",
+                desc: "Two lateral erectile legs wrapping around the pelvic floor."
+            },
+            bulbs: {
+                title: "Vestibular Bulbs & Deep Vasculature",
+                desc: "Accounting for the vast majority of internal clitoral mass, these vascular beds maintain full engorgement capacity inside the pelvis."
             }
-        }
-
-        function handleTextFormSubmit(e) {
-            e.preventDefault();
-            const name = document.getElementById('form-name').value || 'Anonymous';
-            const contact = document.getElementById('form-contact').value;
-            const msg = document.getElementById('form-msg').value;
-
-            const smsBody = encodeURIComponent(`HealingFromFGMTextLine Intake:\nName: ${name}\nMobile: ${contact}\nMsg: ${msg}`);
-
-            document.getElementById('counseling-form').classList.add('hidden');
-            document.getElementById('form-success').classList.remove('hidden');
-
-            setTimeout(() => {
-                window.location.href = `sms:15024308613?body=${smsBody}`;
-            }, 1000);
-        }
-
-        function sendChatMessage(topic) {
-            const chatContainer = document.getElementById('chat-messages');
-            let userText = "";
-            let responseText = "";
-
-            if (topic === 'prevention') {
-                userText = "How can I prevent FGM/C for a family member?";
-                responseText = "Prevention starts by sharing anatomical facts via text. Explaining that 90% of the clitoris is internal—and that cutting does not eliminate desire, but instead causes permanent tissue damage, cysts, and nerve complications—helps parents and elders recognize that FGM fails its intended purpose. Text us at 1-502-430-8613 for tailored family prevention strategies.";
-            } else if (topic === 'arousal') {
-                userText = "Can survivors of FGM/C still experience arousal?";
-                responseText = "Yes. Because 90% of the clitoral body and 7-10cm crura sit deep in the pelvis, the erectile tissue and pudendal nerve roots remain intact. Many survivors experience full arousal and orgasm through deep pelvic touch or pressure. Text 1-502-430-8613 to chat further.";
-            } else if (topic === 'pain') {
-                userText = "Why do I feel hyperactive nerve pain or unexpected sensitivity?";
-                responseText = "Severed surface nerves can grow into clusters called neuromas within scar tissue. These trapped nerves fire unpredictably, resulting in hyper-sensitivity, burning pain, or intense phantom arousal signals. Reach out directly via text at 1-502-430-8613.";
-            }
-
-            const userDiv = document.createElement('div');
-            userDiv.className = "flex items-start justify-end gap-3";
-            userDiv.innerHTML = `
-                <div class="bg-neonPink text-black font-bold p-3 rounded-xl rounded-tr-none max-w-[85%] text-xs shadow-[0_0_10px_#ff00aa]">
-                    ${userText}
-                </div>
-            `;
-            chatContainer.appendChild(userDiv);
-            chatContainer.scrollTop = chatContainer.scrollHeight;
-
-            setTimeout(() => {
-                const counselorDiv = document.createElement('div');
-                counselorDiv.className = "flex items-start gap-3";
-                counselorDiv.innerHTML = `
-                    <div class="w-8 h-8 rounded-lg bg-neonBlue text-black font-bold flex items-center justify-center text-xs shrink-0 mt-1">
-                        <i class="fa-solid fa-headset"></i>
-                    </div>
-                    <div class="bg-black p-3.5 rounded-xl border border-darkBorder text-slate-200 max-w-[85%] text-xs leading-relaxed">
-                        ${responseText}
-                    </div>
-                `;
-                chatContainer.appendChild(counselorDiv);
-                chatContainer.scrollTop = chatContainer.scrollHeight;
-            }, 400);
-        }
-
-        window.onload = function () {
-            selectAnatomy('body');
         };
+
+        function showAnatomy(part) {
+            const info = anatomyInfo[part];
+            if (info) {
+                document.getElementById('anatomy-title').innerText = info.title;
+                document.getElementById('anatomy-desc').innerText = info.desc;
+            }
+        }
+
+        function handleEmailSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('email-name').value || 'Anonymous';
+            const email = document.getElementById('email-address').value;
+            const msg = document.getElementById('email-msg').value;
+
+            const subject = encodeURIComponent(`PGADHealingLine Support Inquiry from ${name}`);
+            const body = encodeURIComponent(`Name/Alias: ${name}\nReturn Email: ${email}\n\nMessage:\n${msg}`);
+
+            document.getElementById('email-success').style.display = 'block';
+
+            setTimeout(() => {
+                window.location.href = `mailto:pgad.counseling.line@gmail.com?subject=${subject}&body=${body}`;
+            }, 800);
+        }
     </script>
 </body>
 
