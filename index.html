@@ -598,9 +598,10 @@
         </div>
     </div>
 
+   <!-- Scripts -->
     <script>
         function quickExit() {
-            window.location.replace("about:blank");
+            window.location.replace("https://www.google.com");
         }
 
         const anatomyInfo = {
@@ -613,6 +614,35 @@
                 desc: "Two lateral erectile legs wrapping around the pelvic floor."
             },
             bulbs: {
-                title: "Vestibular Bulbs & Deep Vascularities"
+                title: "Vestibular Bulbs & Deep Vasculature",
+                desc: "Accounting for the vast majority of internal clitoral mass, these vascular beds maintain full engorgement capacity inside the pelvis."
+            }
+        };
+
+        function showAnatomy(part) {
+            const info = anatomyInfo[part];
+            if (info) {
+                document.getElementById('anatomy-title').innerText = info.title;
+                document.getElementById('anatomy-desc').innerText = info.desc;
             }
         }
+
+        function handleEmailSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('email-name').value || 'Anonymous';
+            const email = document.getElementById('email-address').value;
+            const msg = document.getElementById('email-msg').value;
+
+            const subject = encodeURIComponent(`PGADHealingLine Support Inquiry from ${name}`);
+            const body = encodeURIComponent(`Name/Alias: ${name}\nReturn Email: ${email}\n\nMessage:\n${msg}`);
+
+            document.getElementById('email-success').style.display = 'block';
+
+            setTimeout(() => {
+                window.location.href = `mailto:pgad.counseling.line@gmail.com?subject=${subject}&body=${body}`;
+            }, 800);
+        }
+    </script>
+</body>
+
+</html>
