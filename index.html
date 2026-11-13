@@ -6,15 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PGADHealingLine -- Text Line For Those With Persistent Genital Arousal Disorder/GPD</title>
 
-    <!-- Google Fonts for authentic mid-2000s cyber/web portal vibe -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=VT323&family=Orbitron:wght@700;900&family=Trebuchet+MS&display=swap"
-        rel="stylesheet">
-    <!-- FontAwesome 4.7 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <style>
         * {
             box-sizing: border-box;
@@ -60,7 +51,7 @@
         }
 
         .y2k-title {
-            font-family: 'VT323', 'Orbitron', monospace;
+            font-family: 'Courier New', Courier, monospace;
             font-size: 42px;
             color: #ff00aa;
             text-shadow: 0 0 12px #ff00aa, 0 0 22px #ff00aa, 0 0 30px #00f0ff;
@@ -70,7 +61,7 @@
         }
 
         .y2k-subtitle {
-            font-family: 'Orbitron', sans-serif;
+            font-family: monospace;
             font-size: 12px;
             color: #39ff14;
             text-shadow: 0 0 8px #39ff14;
@@ -111,7 +102,7 @@
             background-color: #120024;
             color: #39ff14;
             border-bottom: 1px solid #ff00aa;
-            font-family: 'VT323', monospace;
+            font-family: monospace;
             font-size: 16px;
             padding: 4px;
         }
@@ -124,12 +115,12 @@
         }
 
         #navbar a {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 11px;
+            font-family: monospace;
+            font-size: 10px;
             color: #ffffff;
             text-decoration: none;
-            padding: 6px 14px;
-            margin: 0 2px;
+            padding: 6px 10px;
+            margin: 2px;
             border: 1px solid #ff00aa;
             background: linear-gradient(180deg, #330066 0%, #110022 100%);
             display: inline-block;
@@ -183,7 +174,7 @@
         }
 
         .box-title {
-            font-family: 'Orbitron', sans-serif;
+            font-family: monospace;
             font-size: 13px;
             font-weight: bold;
             padding: 5px 8px;
@@ -219,7 +210,7 @@
         }
 
         .hero-banner h1 {
-            font-family: 'Orbitron', sans-serif;
+            font-family: monospace;
             font-size: 18px;
             color: #ffffff;
             margin: 0 0 8px 0;
@@ -230,8 +221,8 @@
             display: inline-block;
             background: linear-gradient(180deg, #ff00aa 0%, #990066 100%);
             color: #ffffff !important;
-            font-family: 'VT323', monospace;
-            font-size: 26px;
+            font-family: monospace;
+            font-size: 22px;
             padding: 8px 20px;
             text-decoration: none;
             border: 2px solid #ffffff;
@@ -263,6 +254,58 @@
             opacity: 1 !important;
         }
 
+        .cyber-list {
+            padding-left: 18px;
+            margin: 5px 0;
+            line-height: 1.5;
+            font-size: 12px;
+            color: #e2e8f0;
+        }
+
+        .cyber-list li {
+            margin-bottom: 6px;
+        }
+
+        .cyber-list strong {
+            color: #00ffcc;
+        }
+
+        .cyber-box-pink .cyber-list strong {
+            color: #ff99ee;
+        }
+
+        .cyber-box-green .cyber-list strong {
+            color: #39ff14;
+        }
+
+        .cyber-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 8px;
+            font-size: 11px;
+        }
+
+        .cyber-table th,
+        .cyber-table td {
+            border: 1px solid #39ff14;
+            padding: 7px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .cyber-table th {
+            background-color: #0b2912;
+            color: #39ff14;
+            font-family: monospace;
+            text-transform: uppercase;
+        }
+
+        .cyber-table td {
+            background-color: #051208;
+            color: #e2e8f0;
+            line-height: 1.4;
+        }
+
         input[type="text"],
         input[type="email"],
         textarea {
@@ -283,7 +326,7 @@
             font-weight: bold;
             padding: 5px 15px;
             cursor: pointer;
-            font-family: 'Orbitron', sans-serif;
+            font-family: monospace;
         }
 
         input[type="submit"]:hover {
@@ -299,36 +342,6 @@
             font-size: 11px;
             color: #8888aa;
         }
-
-        .badge-row {
-            margin: 10px 0;
-        }
-
-        .retro-badge {
-            display: inline-block;
-            border: 1px solid #555555;
-            background-color: #000000;
-            color: #ffffff;
-            font-size: 9px;
-            font-family: sans-serif;
-            padding: 2px 5px;
-            margin: 0 3px;
-        }
-
-        .badge-pink {
-            border-color: #ff00aa;
-            color: #ff00aa;
-        }
-
-        .badge-blue {
-            border-color: #00f0ff;
-            color: #00f0ff;
-        }
-
-        .badge-green {
-            border-color: #39ff14;
-            color: #39ff14;
-        }
     </style>
 </head>
 
@@ -336,101 +349,181 @@
 
     <div id="container">
 
-        <!-- 2005 Emergency Privacy Bar -->
         <div id="safety-bar">
-            <span><i class="fa fa-shield"></i> PRIVACY ALERT: NEED QUICK EXIT? CLICK BUTTON TO GO TO GOOGLE</span>
-            <button onclick="quickExit()" class="btn-quick-exit"><i class="fa fa-power-off"></i> LEAVE PAGE NOW</button>
+            <span>[SHIELD] PRIVACY NOTICE: SECURE ONION SERVICE ACTIVE</span>
+            <button onclick="quickExit()" class="btn-quick-exit">LEAVE PAGE NOW</button>
         </div>
 
-        <!-- Y2K Cyber Header Banner -->
         <div id="header-banner">
             <h1 class="y2k-title">PGADHealingLine</h1>
-            <div class="y2k-subtitle">PERSISTENT GENITAL AROUSAL DISORDER, FGM PREVENTION & NERVE EDUCATION
-            </div>
+            <div class="y2k-subtitle">PERSISTENT GENITAL AROUSAL DISORDER, FGM PREVENTION & NERVE EDUCATION</div>
         </div>
 
-        <!-- Vintage Ticker Marquee -->
         <marquee scrollamount="4">
-            *** WELCOME TO PGADHEALINGLINE *** TEXT 1-502-430-8613 FOR DISCREET SUPPORT *** EDUCATIONAL INSIGHT: WHY
-            EXTERNAL CUTTING CANNOT FULLY REMOVE CLITORAL ANATOMY & HOW SA/FGM COMPLICATIONS INTENSIFY PGAD *** EMAIL US AT
-            THE BOTTOM FOR ADVICE ***
+            *** WELCOME TO PGADHEALINGLINE (ONION SERVICE) *** EDUCATIONAL INSIGHT: WHY EXTERNAL CUTTING CANNOT FULLY
+            REMOVE CLITORAL ANATOMY & HOW FGM COMPLICATIONS INTENSIFY PGAD ***
         </marquee>
 
-        <!-- Main Navigation Bar -->
         <div id="navbar">
-            <a href="#about"><i class="fa fa-info-circle"></i> ABOUT US</a>
-            <a href="#anatomy"><i class="fa fa-sitemap"></i> INTERNAL CLITORIS ANATOMY</a>
-            <a href="#support-email"><i class="fa fa-envelope"></i> EMAIL SUPPORT</a>
+            <a href="#about">ABOUT US</a>
+            <a href="#pgad-causes">CAUSES OF PGAD</a>
+            <a href="#vascular-varicose">VASCULAR & VARICOSE VEINS</a>
+            <a href="#diagnostic-testing">DIAGNOSTIC TESTING</a>
+            <a href="#anatomy">INTERNAL ANATOMY</a>
+            <a href="#fgm-pgad">FGM & PGAD LINK</a>
+            <a href="#support-email">SECURE CONTACT</a>
         </div>
 
-        <!-- Main Content Area -->
         <main id="main-wrapper">
-
-            <!-- Sidebar (Left Column) -->
             <aside class="sidebar">
-                <div class="cyber-box-pink">
-                    <div class="box-title title-pink"><i class="fa fa-comments"></i> TEXT LINE</div>
-                    <p style="font-size:11px; line-height:1.4;">
-                        Need safe, judgment-free text support for pelvic nerve distress or arousal conditions?
-                    </p>
-                    <div style="text-align:center; margin:10px 0;">
-                        <a href="sms:15024308613" class="text-neon-btn" style="font-size:16px; padding:5px 8px;">
-                            <i class="fa fa-mobile"></i> 1-502-430-8613
-                        </a>
-                    </div>
-                </div>
-
                 <div class="cyber-box">
-                    <div class="box-title title-blue"><i class="fa fa-bar-chart"></i> QUICK FACTS</div>
+                    <div class="box-title title-blue">QUICK FACTS</div>
                     <ul style="padding-left:15px; margin:0; font-size:11px; line-height:1.6;">
                         <li><strong>90% Internal:</strong> Deep pelvic structure remains intact.</li>
                         <li><strong>Neuroma Risk:</strong> Scar tissue triggers false nerve signals.</li>
-                        <li><strong>Confidential:</strong> Safe peer support and guidance.</li>
+                        <li><strong>Vascular Factor:</strong> Pelvic varicose veins cause chronic engorgement.</li>
+                        <li><strong>Confidential:</strong> Onion-routed anonymous network.</li>
                     </ul>
                 </div>
 
+                <div class="cyber-box-pink">
+                    <div class="box-title title-pink">MEDICAL DISCLAIMER</div>
+                    <p style="font-size:11px; line-height:1.5; margin:0; color:#e2e8f0;">
+                        Information provided on this portal is for educational awareness and self-advocacy when speaking
+                        with pelvic pain specialists, neurologists, or interventional radiologists. It does not replace
+                        direct clinical diagnosis.
+                    </p>
+                </div>
             </aside>
 
-            <!-- Content Column (Right Area) -->
             <div class="content-area">
-
-                <!-- Hero Banner -->
                 <div class="hero-banner">
                     <h1>VALIDATION, EDUCATION & RECOVERY SUPPORT</h1>
                     <p style="color:#00f0ff; font-size:12px; line-height:1.4; margin-bottom:10px;">
-                        Specialized support for Persistent Genital Arousal Disorder (PGAD), pelvic nerve trauma, and
-                        female genital mutilation (FGM) prevention & recovery complications.
+                        Specialized support for Persistent Genital Arousal Disorder (PGAD), pelvic nerve trauma,
+                        vascular congestion, and female genital mutilation (FGM) prevention & recovery complications.
                     </p>
-                    <a href="sms:15024308613" class="text-neon-btn">
-                        <i class="fa fa-mobile"></i> TEXT 1-502-430-8613
-                    </a>
                 </div>
 
-                <!-- 1. ABOUT US SECTION (Right below header/hero) -->
                 <section id="about" class="cyber-box">
-                    <div class="box-title title-blue"><i class="fa fa-info-circle"></i> ABOUT US</div>
+                    <div class="box-title title-blue">ABOUT US</div>
                     <p style="line-height:1.5; margin-bottom:8px;">
-                        Welcome to <strong>PGADHealingLine</strong>. Our web portal and text hotline was founded to
-                        provide compassionate guidance, medical insights, and peer support for individuals experiencing
-                        Persistent Genital Arousal Disorder (PGAD), pudendal nerve entrapment, and complications
-                        stemming from CSA/FGM.
-                    </p>
-                    <p style="line-height:1.5; margin:0;">
-                        We believe that true healing begins with accurate physiological understanding and a safe space
-                        to share your experience without shame or judgment. Whether you are navigating unprovoked
-                        neurological arousal or seeking prevention and recovery advice, our confidential channels are
-                        open to support you.
+                        Welcome to <strong>PGADHealingLine</strong>. Our dark web portal provides confidential guidance,
+                        medical insights, and peer support for individuals experiencing Persistent Genital Arousal
+                        Disorder (PGAD), pudendal nerve entrapment, pelvic vascular congestion, and complications
+                        stemming from trauma.
                     </p>
                 </section>
 
-                <!-- 2. INTERNAL CLITORIS ANATOMY EDUCATION SECTION -->
+                <section id="pgad-causes" class="cyber-box-pink">
+                    <div class="box-title title-pink">KNOWN CAUSES & TRIGGERS OF PGAD</div>
+                    <p style="font-size:12px; line-height:1.5; margin-bottom:8px; color:#e2e8f0;">
+                        PGAD/Genito-Pelvic Dysesthesia (GPD) is a physical medical condition driven by misfiring sensory
+                        pathways, structural compression, or hemodynamic congestion rather than psychological desire.
+                        Common underlying causes include:
+                    </p>
+                    <ul class="cyber-list">
+                        <li><strong>Neurological & Spinal Factors:</strong> Tarlov (perineural) cysts in the sacral
+                            spine (S2–S4), lumbar/sacral disc herniations, or spinal stenosis compressing the nerve
+                            roots that supply the pelvic floor.</li>
+                        <li><strong>Peripheral Nerve Entrapment:</strong> Compression, irritation, or scarring of the
+                            pudendal nerve or dorsal nerve of the clitoris caused by pelvic trauma, childbirth, surgery,
+                            chronic cycling, or FGM scar neuromas.</li>
+                        <li><strong>Vascular Congestion:</strong> Pelvic Congestion Syndrome (PCS), pelvic varicose
+                            veins, or arteriovenous malformations that trap blood in pelvic and genital tissues.</li>
+                        <li><strong>Pharmacological Triggers:</strong> Initiation or sudden withdrawal of SSRIs/SNRIs,
+                            trazodone, or dopamine-modulating medications that alter spinal cord inhibitory signaling.</li>
+                        <li><strong>Pelvic Floor Hypertonicity:</strong> Overactive, spasming pelvic floor muscles
+                            putting mechanical pressure on adjacent nerves and blood vessels.</li>
+                    </ul>
+                </section>
+
+                <section id="vascular-varicose" class="cyber-box">
+                    <div class="box-title title-blue">VASCULAR SYSTEM & PELVIC VARICOSE VEINS</div>
+                    <p style="font-size:12px; line-height:1.5; margin-bottom:8px; color:#e2e8f0;">
+                        Healthy genital arousal relies on a rapid cycle of increased arterial inflow followed by
+                        efficient venous drainage once stimulation ends. For individuals with <strong>varicose veins in
+                            the pelvis or vulvar region (Pelvic Congestion Syndrome)</strong>, this drainage mechanism
+                        malfunctions:
+                    </p>
+                    <ul class="cyber-list">
+                        <li><strong>Venous Valve Insufficiency:</strong> Normally, tiny one-way valves inside the
+                            ovarian and internal iliac veins prevent blood from flowing backward due to gravity. When
+                            these valves weaken or fail, blood flows in reverse (venous reflux).</li>
+                        <li><strong>Chronic Pooling & Engorgement:</strong> Reflux causes the deep pelvic veins
+                            surrounding the uterus, ovaries, vaginal walls, and clitoral bulbs to stretch, twist, and
+                            balloon into varicosities.</li>
+                        <li><strong>Persistent Pressure on Arousal Tissues:</strong> Because the vestibular bulbs and
+                            clitoral crura are densely vascular erectile structures, stagnant venous blood keeps them
+                            chronically engorged and hypersensitive—mimicking continuous physical arousal, throbbing, or
+                            heaviness even without sexual triggers.</li>
+                        <li><strong>Positional Symptoms:</strong> Vascular PGAD symptoms frequently worsen after
+                            prolonged standing, sitting, or before menstruation (when hormonal shifts further dilate
+                            blood vessels) and may temporarily ease when lying flat with legs elevated.</li>
+                    </ul>
+                </section>
+
+                <section id="diagnostic-testing" class="cyber-box-green">
+                    <div class="box-title title-green">RECOMMENDED MEDICAL TESTING TO RULE OUT CAUSES</div>
+                    <p style="font-size:12px; line-height:1.5; margin-bottom:8px; color:#e2e8f0;">
+                        Because PGAD overlaps with spinal, vascular, and muscular conditions, specialists typically use
+                        a targeted diagnostic workup to identify or rule out treatable root causes:
+                    </p>
+                    <table class="cyber-table">
+                        <thead>
+                            <tr>
+                                <th style="width:28%;">Diagnostic Test</th>
+                                <th style="width:32%;">Target System</th>
+                                <th style="width:40%;">What It Rules Out / Identifies</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Pelvic &amp; Lumbosacral MRI</strong></td>
+                                <td>Sacral Spine &amp; Soft Tissue</td>
+                                <td>Rules out Tarlov cysts, sacral nerve root compression, herniated discs, or pelvic
+                                    masses pressing on S2–S4 nerves.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>MR Neurography (MRN)</strong></td>
+                                <td>Peripheral Pelvic Nerves</td>
+                                <td>High-resolution nerve imaging used to detect pudendal nerve entrapment, thickening,
+                                    or post-surgical/FGM scar neuromas.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Transvaginal &amp; Pelvic Doppler Ultrasound</strong></td>
+                                <td>Pelvic &amp; Vulvar Vasculature</td>
+                                <td>Performed upright and lying down (often with Valsalva maneuver) to detect dilated
+                                    pelvic varicose veins and retrograde venous blood flow.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pelvic Venography / CT or MR Venogram</strong></td>
+                                <td>Ovarian &amp; Internal Iliac Veins</td>
+                                <td>Maps exact venous reflux pathways and confirms Pelvic Congestion Syndrome or vascular
+                                    compressions (such as Nutcracker or May-Thurner syndrome).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Diagnostic Pudendal Nerve Block</strong></td>
+                                <td>Pudendal Nerve Pathway</td>
+                                <td>Image-guided local anesthetic injection; temporary symptom relief confirms the
+                                    pudendal nerve is the primary pain/arousal signal generator.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Quantitative Sensory Testing (QST) &amp; Pelvic Floor Exam</strong></td>
+                                <td>Sensory Fibers &amp; Musculature</td>
+                                <td>Assesses small-fiber neuropathy (temperature/vibration thresholds) and evaluates
+                                    myofascial trigger points or hypertonic pelvic floor muscles.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
                 <section id="anatomy" class="cyber-box-pink">
-                    <div class="box-title title-pink"><i class="fa fa-sitemap"></i> INTERNAL CLITORIS ANATOMY EDUCATION
-                    </div>
+                    <div class="box-title title-pink">INTERNAL CLITORIS ANATOMY EDUCATION</div>
                     <p style="font-size:11px; margin-bottom:10px; line-height:1.4;">
                         A common misconception is that external cutting can fully remove the clitoris. In biological
                         reality, <strong>over 90% of the clitoral structure and its extensive nerve pathways live deep
-                            inside the pelvic floor</strong>. Click the diagram regions below to explore:
+                            inside the pelvic floor</strong>.
                     </p>
 
                     <div class="anatomy-container">
@@ -438,9 +531,8 @@
                             <rect x="225" y="15" width="50" height="85" fill="#120024" stroke="#00f0ff"
                                 stroke-width="1.5" />
                             <text x="250" y="28" fill="#00f0ff" font-size="8" text-anchor="middle"
-                                font-family="Orbitron">SACRAL SPINE</text>
+                                font-family="monospace">SACRAL SPINE</text>
 
-                            <!-- Interactive Nodes -->
                             <circle id="part-spine" class="anatomy-part" cx="250" cy="65" r="12" fill="#ff00aa"
                                 opacity="0.8" onclick="showAnatomy('spine')" />
                             <text x="250" y="68" fill="#fff" font-size="7" text-anchor="middle"
@@ -478,77 +570,43 @@
                     </div>
                 </section>
 
-                <!-- Section: FGM & PGAD Connection -->
                 <section id="fgm-pgad" class="cyber-box">
-                    <div class="box-title title-blue"><i class="fa fa-dna"></i> WHY FGM COMPLICATIONS INTENSIFY (OR EVEN
-                        CAN CAUSE) PGAD</div>
+                    <div class="box-title title-blue">WHY FGM COMPLICATIONS INTENSIFY (OR EVEN CAN CAUSE) PGAD</div>
                     <p style="line-height:1.5; margin-bottom:8px;">
                         Because cutting cannot fully excise internal erectile tissue (such as the 7–10cm crura and
                         vestibular bulbs) or deep pudendal nerve roots, the physical architecture for arousal remains
                         active, just with more signals of pain and discomfort.
                     </p>
-                    <p style="line-height:1.5; margin:0;">
-                        Furthermore, severed surface nerves often form painful clusters called <em>neuromas</em> trapped
-                        inside post-cutting scar tissue. When these trapped nerve endings fire continuously, they can
-                        induce intense burning pressure, hyper-sensitivity, and persistent unwanted arousal—heavily
-                        worsening or triggering PGAD symptoms.
-                    </p>
                 </section>
 
-                <!-- 3. BOTTOM SECTION: EMAIL FOR SUPPORT OR ADVICE -->
                 <section id="support-email" class="cyber-box-green">
-                    <div class="box-title title-green"><i class="fa fa-envelope"></i> EMAIL US FOR SUPPORT OR ADVICE
-                    </div>
+                    <div class="box-title title-green">SECURE MESSAGE / INQUIRY</div>
                     <p style="font-size:11px; line-height:1.4; margin-bottom:10px;">
-                        Prefer email over text? Send your confidential questions or requests for guidance directly to
-                        our support team. All submissions remain strictly private.
+                        Onion services provide end-to-end anonymity. Post your feedback or note below securely over Tor.
                     </p>
-
-                    <form action="https://formspree.io/f/maeoydza" method="POST" id="support-email-form">
-                        <label style="font-size:10px; text-transform:uppercase; color:#39ff14;">Your Preferred Alias /
-                            Name:</label>
-                        <input type="text" id="email-name" name="name" placeholder="e.g. Sarah (or leave blank)">
-
-                        <label style="font-size:10px; text-transform:uppercase; color:#39ff14;">Your Email Address (For
-                            Reply):</label>
-                        <input type="email" id="email-address" name="email" required
-                            placeholder="your.email@example.com">
-
-                        <label style="font-size:10px; text-transform:uppercase; color:#39ff14;">Your Message or
-                            Question:</label>
-                        <textarea id="email-msg" name="message" rows="3" required
-                            placeholder="Share what you feel comfortable writing..."></textarea>
-
-                        <input type="submit" value="SEND EMAIL MESSAGE"
-                            style="background: linear-gradient(180deg, #39ff14 0%, #006622 100%); color: #000;">
+                    <form onsubmit="handleLocalSubmit(event)">
+                        <label style="font-size:10px; text-transform:uppercase; color:#39ff14;">Your Alias:</label>
+                        <input type="text" id="msg-name" placeholder="Anonymous">
+                        <label style="font-size:10px; text-transform:uppercase; color:#39ff14;">Message:</label>
+                        <textarea id="msg-content" rows="3" required placeholder="Write message here..."></textarea>
+                        <input type="submit" value="SUBMIT SECURELY">
                     </form>
-
-                    <div id="email-success"
+                    <div id="submit-success"
                         style="display:none; color:#39ff14; font-weight:bold; margin-top:8px; text-align:center;">
-                        <i class="fa fa-check-circle"></i> Opening your email client to send message securely...
+                        [OK] Message handled locally within the isolated onion service environment.
                     </div>
                 </section>
-
             </div>
-
         </main>
 
-        <!-- 2005 Retro Footer -->
         <div id="footer">
-            <p>
-                &copy; PGADHealingLine. All rights reserved. Direct Text Line:
-                <strong>1-502-430-8613</strong>.
-                <br>
-                Educational peer support and anatomical awareness. Not a substitute for formal medical treatment.
-            </p>
+            <p>&copy; PGADHealingLine. Onion Service. Educational peer support and anatomical awareness.</p>
         </div>
-
     </div>
 
-    <!-- Scripts -->
     <script>
         function quickExit() {
-            window.location.replace("https://www.google.com");
+            window.location.replace("about:blank");
         }
 
         const anatomyInfo = {
@@ -561,35 +619,4 @@
                 desc: "Two lateral erectile legs wrapping around the pelvic floor."
             },
             bulbs: {
-                title: "Vestibular Bulbs & Deep Vasculature",
-                desc: "Accounting for the vast majority of internal clitoral mass, these vascular beds maintain full engorgement capacity inside the pelvis."
-            }
-        };
-
-        function showAnatomy(part) {
-            const info = anatomyInfo[part];
-            if (info) {
-                document.getElementById('anatomy-title').innerText = info.title;
-                document.getElementById('anatomy-desc').innerText = info.desc;
-            }
-        }
-
-        function handleEmailSubmit(e) {
-            e.preventDefault();
-            const name = document.getElementById('email-name').value || 'Anonymous';
-            const email = document.getElementById('email-address').value;
-            const msg = document.getElementById('email-msg').value;
-
-            const subject = encodeURIComponent(`PGADHealingLine Support Inquiry from ${name}`);
-            const body = encodeURIComponent(`Name/Alias: ${name}\nReturn Email: ${email}\n\nMessage:\n${msg}`);
-
-            document.getElementById('email-success').style.display = 'block';
-
-            setTimeout(() => {
-                window.location.href = `mailto:pgad.counseling.line@gmail.com?subject=${subject}&body=${body}`;
-            }, 800);
-        }
-    </script>
-</body>
-
-</html>
+                title: "Vestibular Bulbs & Deep Vascular
